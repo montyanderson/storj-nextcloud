@@ -1,5 +1,7 @@
 # storj-nextcloud
 
+[![Build Status](https://travis-ci.org/montyanderson/storj-nextcloud.svg?branch=master)](https://travis-ci.org/montyanderson/storj-nextcloud)
+
 ## Initial Set-up
 Make sure your `PATH` includes the `$GOPATH/bin` directory, so that your commands can be easily used [Refer: Install the Go Tools](https://golang.org/doc/install):
 ```
