@@ -8,13 +8,7 @@ Make sure your `PATH` includes the `$GOPATH/bin` directory, so that your command
 $ export PATH=$PATH:$GOPATH/bin
 ```
 
-Install dependencies.
-
-```
-$ go get
-```
-
-## Build ONCE
+## Build
 
 ```
 $ go build storj-nextcloud/storj-nextcloud.go
@@ -75,15 +69,14 @@ $ go build storj-nextcloud/storj-nextcloud.go
     $ ./storj-nextcloud -v
 ```
 
-* Connect and transfer file(s)/folder(s) from a desired NextCloud account to desired Storj Bucket
-    * **Note** : Path should be `/` for full Back-Up and filepath/folderpath should be in the form `/path/to/file_or_folder`
+* Backup Nextcloud instance to Storj
 ```
-    $ ./storj-nextcloud.go store ./config/nextcloud_property.json ./config/storj_config.json key filePath/folderPath
+    $ ./storj-nextcloud.go store ./config/nextcloud_property.json ./config/storj_config.json
 ```
 
 * Read data in `debug` mode from desired NextCloud instance and upload it to given Storj network bucket and download locally to verify successful upload.
 ```
-    $ ./storj-nextcloud.go store debug ./config/nextcloud_property.json ./config/storj_config.json key filePath/folderPath
+    $ ./storj-nextcloud.go store debug ./config/nextcloud_property.json ./config/storj_config.json
 ```
 
 * Read NextCloud instance property from a desired JSON file and display all the contents in the NextCloud account.
